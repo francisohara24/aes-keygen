@@ -152,50 +152,51 @@ def sub_key(round_no, words):
     return result_new
 
 
-print("WELCOME TO THE AES SUB-KEY GENERATOR\n—————————————————————————————————————————————————\n")
-key = input("Enter your 16-character key:\n")
-# key = "odiAaraHOsicnarF"
+if __name__ == "__main__":
+    print("WELCOME TO THE AES SUB-KEY GENERATOR\n—————————————————————————————————————————————————\n")
+    key = input("Enter your 16-character key:\n")
+    # key = "odiAaraHOsicnarF"
 
-# Round 0
-print("ROUND 0:")
-sub_key0 = default_key(key)
+    # Round 0
+    print("ROUND 0:")
+    sub_key0 = default_key(key)
 
-# Round 1
-print("ROUND 1:")
-sub_key1 = sub_key(1, sub_key0)
+    # Round 1
+    print("ROUND 1:")
+    sub_key1 = sub_key(1, sub_key0)
 
-# Round 2
-print("ROUND 2:")
-sub_key2 = sub_key(2, sub_key1)
+    # Round 2
+    print("ROUND 2:")
+    sub_key2 = sub_key(2, sub_key1)
 
-# Round 3
-print("ROUND 3:")
-sub_key3 = sub_key(3, sub_key2)
+    # Round 3
+    print("ROUND 3:")
+    sub_key3 = sub_key(3, sub_key2)
 
-# Round 4
-print("ROUND 4:")
-sub_key4 = sub_key(4, sub_key3)
+    # Round 4
+    print("ROUND 4:")
+    sub_key4 = sub_key(4, sub_key3)
 
-# Round 5
-print("ROUND 5:")
-sub_key5 = sub_key(5, sub_key4)
+    # Round 5
+    print("ROUND 5:")
+    sub_key5 = sub_key(5, sub_key4)
 
-# Round 6
-print("ROUND 6:")
-sub_key6 = sub_key(6, sub_key5)
+    # Round 6
+    print("ROUND 6:")
+    sub_key6 = sub_key(6, sub_key5)
 
-# Round 7
-print("ROUND 7:")
-sub_key7 = sub_key(7, sub_key6)
+    # Round 7
+    print("ROUND 7:")
+    sub_key7 = sub_key(7, sub_key6)
 
-# Round 8
-print("ROUND 8:")
-sub_key8 = sub_key(8, sub_key7)
+    # Round 8
+    print("ROUND 8:")
+    sub_key8 = sub_key(8, sub_key7)
 
-# Round 9
-print("ROUND 9:")
-sub_key9 = sub_key(9, sub_key8)
+    # Round 9
+    print("ROUND 9:")
+    sub_key9 = sub_key(9, sub_key8)
 
-# Round 10
-print("ROUND 10:")
-sub_key10 = sub_key(10, sub_key9)
+    # Round 10
+    print("ROUND 10:")
+    sub_key10 = sub_key(10, sub_key9)
